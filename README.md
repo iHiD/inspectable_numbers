@@ -1,8 +1,21 @@
-# InspectableNumbers
+# Inspectable Numbers
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/inspectable_numbers`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem adds underscoring to numbers in Ruby. That means when you print out large numbers, then look like `10_000_000` rather than `10000000`.
 
-TODO: Delete this and the text above, and describe your gem
+o we go from:
+
+```ruby
+10000000000
+=> 10000000000 
+```
+
+to: 
+```ruby
+require "inspectable_numbers"
+
+10000000000
+=> 10_000_000_000 
+```
 
 ## Installation
 
@@ -20,10 +33,6 @@ Or install it yourself as:
 
     $ gem install inspectable_numbers
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -32,4 +41,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/inspectable_numbers.
+Bug reports and pull requests are welcome on GitHub at https://github.com/iHiD/inspectable_numbers.
