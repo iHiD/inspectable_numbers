@@ -7,6 +7,7 @@ end
 
 class Float
   def inspect
+    return to_s if infinite?
     InspectableNumbers.underscore_number(self)
   end
 end
