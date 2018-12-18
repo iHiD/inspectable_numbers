@@ -16,4 +16,9 @@ class InspectableNumbersTest < Minitest::Test
   def test_it_respect_integer_base
     assert_equal "4553207", 1_234_567.inspect(8)
   end
+
+  def test_it_doesnt_format_infinities
+    assert_equal "Infinity", (1.0 / 0.0).inspect
+    assert_equal "-Infinity", (-1.0 / 0.0).inspect
+  end
 end
